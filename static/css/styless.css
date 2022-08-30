@@ -38,7 +38,6 @@ body{
 }
 .nav-link{
     font-family: var(--font-mono);
-    text-transform: uppercase;
     font-weight: 500;
     padding-right: 2.5rem;
 }
@@ -89,7 +88,7 @@ h4.title-text{
 h2 {
     font-size: 3rem;
     margin-top: 20rem;
-    color: #64ffda;
+    color: #ccd6f6;
 }
 
 .about-area{
@@ -100,9 +99,18 @@ h2 {
     margin-left: 190px;
     margin-top: -80px;
 }
+.about-area .heading {
+    position: relative;
+    font-size: 2.5rem;
+}
 .heading {
     position: relative;
     font-size: 2.5rem;
+}
+.about-area .heading::before {
+    position: relative;
+    content: "01. ";
+    color: #64ffda;    
 }
 .inner {
     display: grid;
@@ -115,6 +123,16 @@ p{
 }
 a{
     color: #64ffda; 
+    list-style: none;
+}
+.about-area a{
+    color: #64ffda; 
+    list-style: none;
+}
+.about-area a:hover{ 
+    list-style: none;
+    color: #ccd6f6;
+    text-decoration: none;
 }
 .resume_buttons{
     display: inline-block;
@@ -212,6 +230,11 @@ ul {
 
 /* start experiences */
 
+.experiences-area .heading::before {
+    position: relative;
+    content: "02. ";
+    color: #64ffda;    
+}
 
 .experiences-area h2{
     gap: 2.0rem;
@@ -333,6 +356,12 @@ span i:hover{
 
 /* experiences area end */
 /* projects area */
+
+.projects-area .heading::before {
+    position: relative;
+    content: "03. ";
+    color: #64ffda;    
+}
 .projects-area h2{
     gap: 2.0rem;
     left: 200px;
