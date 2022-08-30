@@ -185,12 +185,14 @@ a{
     font-size: 1.8rem;
     padding: 9px 8px;
     text-decoration: none;
+    list-style: none;
 }
 
 .icon, i:hover{
     color: white;
     transform: translatex(0.15rem);
     text-decoration: none;
+    list-style: none;
 }
 
 .skills-list {
@@ -226,6 +228,15 @@ ul {
     position: relative;
     width: 68%;
     margin-top: 35px;
+}
+.my-pic::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100;
+    width: 100;
+    background-color: black;
 }
 
 /* start experiences */
@@ -495,7 +506,17 @@ div{
     margin: 140px;
     margin-left: -205px;
     padding: 0;
+    position: relative;
 }
+/* .gatasby-image-wrapper img::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100;
+   width: 100;
+   background-color: black;
+} */
 .tic-tac-toe{
     visibility: visible;
     opacity: 1;
