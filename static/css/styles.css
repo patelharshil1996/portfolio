@@ -13,7 +13,6 @@ body {
     line-height: 1.0;
     color: #8892b0;
     text-align: left;
-    background-color: #fff;
     font-family: var(--font-sans);
 }
 .navbar-light .navbar-nav .nav-link {
@@ -27,9 +26,22 @@ body{
     position: relative;
     left:180px;
 }
+@media only screen and (max-width:768px){
+    .navbar-brand{
+        position: relative;
+        left:-10px;
+        
+    }
+}
 .logo{
     width: 65px;
     height: 80px;
+}
+@media only screen and (max-width:768px){
+    .logo{
+        width: 55px;
+        height: 70px;
+    }
 }
 
 .navbar-nav{
@@ -66,6 +78,20 @@ h1 {
     font-size: 5.5rem;
     font-weight: 500;
 }
+@media only screen and (max-width:768px){
+    h1 {
+        color: #ccd6f6;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .site-main{
+        margin-left: 20px;
+    }
+}
+
 h3.big-heading{
     color: #a8b2d1;
     font-size: 5rem;
@@ -78,11 +104,35 @@ h3.title{
     font-weight: 400;
     margin-top: 50px;
 }
+
+@media only screen and (max-width:768px){
+    h3.title{
+        color: #64ffda;
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-top: 50px;
+    }
+}
 h4.title-text{
     color: #8892b0;
     font-weight: 400;
     margin-top: 20px;
     font-size: 2rem;
+}
+@media only screen and (max-width:768px){
+    h4.title-text{
+        color: #8892b0;
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    h4.big-heading{
+        font-size: 1.2rem;
+        
+    }
 }
 
 h2 {
@@ -95,6 +145,13 @@ h2 {
     margin-left: 190px;
     margin-top: -80px;
 }
+
+@media only screen and (max-width:768px){
+    .about-area{
+        margin-left: 7px;
+        margin-top: -80px;
+    }
+}
 .Experience-area{
     margin-left: 190px;
     margin-top: -80px;
@@ -102,6 +159,12 @@ h2 {
 .about-area .heading {
     position: relative;
     font-size: 2.5rem;
+}
+@media only screen and (max-width:768px){
+    .about-area .heading {
+        position: relative;
+        font-size: 2.0rem;
+    }
 }
 .heading {
     position: relative;
@@ -117,9 +180,21 @@ h2 {
     grid-template-columns: 3fr 2fr;
     gap: 50px;
 }
+@media only screen and (max-width:768px){
+    .inner {
+        display:block;
+    } 
+}
+
 p{
     margin-top: 30px;
     font-size: 1.3rem;
+}
+@media only screen and (max-width:768px){
+    p{
+        margin-top: 30px;
+        font-size: 1.1rem;
+    }
 }
 a{
     color: #64ffda; 
@@ -164,6 +239,25 @@ a{
     transition: background.6s ease;
     list-style: none;
 }
+@media only screen and (max-width:768px){
+    .contact-me a{
+        display: inline-block;
+        font-weight: 300;
+        color: #64ffda;
+        text-align: center;
+        vertical-align: middle;
+        background: transparent;
+        background-clip: padding-box;
+        border: 2px solid #64ffda;
+        padding: .375rem .75rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        margin-top: 55px;
+        transition: background.6s ease;
+        list-style: none;
+    }
+}
 .resume_buttons:hover{
     background: transparent;
     background-clip: padding-box;
@@ -188,6 +282,16 @@ a{
     list-style: none;
 }
 
+@media only screen and (max-width:768px){
+    .icon, i{
+        margin-top: 10px;
+        font-size: 1.5rem;
+        padding: 9px 8px;
+        text-decoration: none;
+        list-style: none;
+    }
+}
+
 .icon, i:hover{
     color: white;
     transform: translatex(0.15rem);
@@ -203,6 +307,11 @@ a{
     overflow: hidden;
     list-style: none;
     font-size: 1.2rem;
+}
+@media only screen and (max-width:768px){
+    .skills-list {
+        font-size: 1.0rem;
+    }
 }
 .skills{
     margin-bottom: 1rem;
@@ -229,6 +338,14 @@ ul {
     width: 68%;
     margin-top: 35px;
 }
+
+@media only screen and (max-width:768px){
+    .my-pic{
+        margin: 50px auto 0px;
+        width: 70%;
+        left: 70px;
+    }
+}
 .my-pic::after{
     position: absolute;
     content: "";
@@ -247,6 +364,13 @@ ul {
     color: #64ffda;    
 }
 
+@media only screen and (max-width:768px){
+    .experiences-area h2{
+        margin-left: -190px;
+        font-size: 1.8rem;
+    }
+}
+
 .experiences-area h2{
     gap: 2.0rem;
     left: 200px;
@@ -261,12 +385,23 @@ ul {
     margin-top: 25px;
     color: #8892b0;
 }
+@media only screen and (max-width:768px){
+    .experiences_container{
+        display: block;
+        margin: 20px;
+    }
+}
 
 span{
     font-size: 1.0rem;
     margin-bottom: -15px;
     margin-left: 35px;
     margin-top: 20px;
+}
+@media only screen and (max-width:768px){
+    span{
+        font-size: 0.9rem;
+    }
 }
 
 span:hover{
@@ -302,6 +437,12 @@ span i:hover{
     font-size: 1.5rem;
     margin-bottom: -10px;
 }
+
+@media only screen and (max-width:768px){
+    .experiences_title{
+        font-size: 1.3rem;
+    }
+}
 .experiences_title::before {
     content: "▹";
     position: relative;
@@ -310,8 +451,24 @@ span i:hover{
     font-size: 2rem;
     line-height: 12px;
 }
+
+@media only screen and (max-width:768px){
+    .experiences_title::before {
+        content: "▹";
+        left: 0px;
+        color: #64ffda;
+        font-size: 2rem;
+        line-height: 12px;
+    }
+}
 .experiences_card{
     gap: 1.0rem;   
+}
+@media only screen and (max-width:768px){
+    .experiences_card{
+        gap: 0rem;
+        margin-top: 40px;   
+    }
 }
 
 .experiences_model{
@@ -325,6 +482,19 @@ span i:hover{
     opacity: 0; 
     z-index: inherit;
 }
+@media only screen and (max-width:768px){
+    .experiences_model{
+        position: absolute;
+        inset: 0;
+        padding: 2rem 1rem;
+        display: grid;
+        place-items: center;
+        transition: .4s;
+        /* visibility: hidden;
+        opacity: 0;  */
+        z-index: 3;
+    }
+}
 .experiences_model-content{
     position: relative;
     background-color: #233554;
@@ -336,8 +506,29 @@ span i:hover{
     margin-top: 70px;
     margin-bottom: 20px;
 }
+@media only screen and (max-width:768px){
+    .experiences_model-content{
+        position: relative;
+        background-color: #233554;
+        padding: 2.5rem 1.5rem 2.5rem;
+        border-radius: 1.5rem;
+        border: 2px solid;
+        margin-left: -25px;
+        margin-right: 220px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        padding: 1.5rem;
+        /* margin: -3rpx; */
+}
+    }
+
 .exp{
     font-size: 1.1rem;
+}
+@media only screen and (max-width:768px){
+    .exp{
+        font-size: 1.0rem;
+    }
 }
 .experiences_model-title,
 .experiences_model-description{
@@ -350,12 +541,27 @@ span i:hover{
     font-size: 1.7rem;
     color: #64ffda;
 }
+@media only screen and (max-width:768px){
+    .experiences_model-title{
+        font-size: 1.1rem;
+        color: #64ffda;
+    }
+}
 .experiences_model-close{
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
     font-size: 1.3rem;
     cursor: pointer;
+}
+@media only screen and (max-width:768px){
+    .experiences_model-close{
+        position: absolute;
+        top: 0.2rem;
+        right: 0.5rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
 }
 .experiences_model-close{
     color: #64ffda;
@@ -378,6 +584,14 @@ span i:hover{
     left: 200px;
     margin-top: 290px;
 }
+@media only screen and (max-width:768px){
+    .projects-area h2{
+        left: 10px;
+        margin-top: 290px;
+        font-size: 1.8rem;
+    }
+}
+
 .styled_projects{
     list-style: none;
     padding: 0px;
@@ -397,6 +611,14 @@ span i:hover{
     margin-left: 185px;
     margin-top: 40px;
 }
+@media only screen and (max-width:768px){
+    .projects_box{
+        box-shadow: rgba(2, 12,27,0.7);
+        display: block;
+        margin-left: 14px;
+        
+    }
+}
 /* .projects_box .projects-content{
     display:flex;
     flex-direction: column;
@@ -412,6 +634,16 @@ span i:hover{
 .projects-content{
     grid-column: 5 / -1;
     text-align: right;
+}
+@media only screen and (max-width:768px){
+    .projects-content{
+        padding: 0px;
+        display: block;
+        margin: 60px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        left: 20px;
+    }
 }
 div{
     display: block;
@@ -480,8 +712,8 @@ div{
     border-radius: 4px;
     object-fit: cover;
     padding: -10px;
-    
 }
+
 .projects-image a{
     position: relative; 
     border-radius: 4px;
@@ -507,6 +739,13 @@ div{
     margin-left: -205px;
     padding: 0;
     position: relative;
+}
+@media only screen and (max-width:768px){
+    .gatasby-image-wrapper img{
+        padding: 70px;
+        margin-top: 10px;
+        margin-left: -290px;
+    }
 }
 /* .gatasby-image-wrapper img::after{
    content: "";
@@ -633,6 +872,16 @@ div{
     background-color: #a8b2d1;
     color: #a8b2d1;
 }
+
+/* @media only screen and (min-width:768px){
+    .navbar-brand{
+        position: relative;
+        padding: 0px;
+        margin-left: -178px;
+        margin-top: 40px;
+    }
+} */
+
 
 
 
