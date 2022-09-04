@@ -15,6 +15,225 @@ body {
     text-align: left;
     font-family: var(--font-sans);
 }
+body{
+    background-color: #061630;
+}
+/* navigation bar responsive  start*/
+#header{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    #header{
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        margin-top: 0px;
+        width: 100vw;
+        height: auto;
+    }
+}
+@media only screen and (max-width:768px){
+    #header .header{
+        min-height: 8vh;
+        background-color:#061630;
+        transition: .2s ease background-color;
+    
+    }
+}
+@media only screen and (max-width:768px){
+    .header .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        padding: 0 3px;
+        margin: -20px;
+    }
+}
+@media only screen and (max-width:768px){
+    .header .nav-bar .navbar-brand img{
+        width: 45px;
+        height: 55px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width:768px){
+    #header .nav-list ul{
+        list-style: none;
+        position: absolute;
+        background-color:#112240;
+        width: 100vw;
+        height: 100vh;
+        left: 100%;
+        top: -20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        overflow: hidden;
+        margin-left: 10px;
+        transition: .5s ease left;
+    }
+}
+@media only screen and (max-width:768px){
+    #header .nav-list ul.active{
+        left: 20%;
+    }
+}
+@media only screen and (max-width:768px){
+    #header .nav-list ul a{
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0.3rem;
+        text-decoration: none;
+        color:#ccd6f6;
+        padding: 20px;
+        text-transform: uppercase;
+        display: block;
+        margin-right: 150px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #header .nav-list ul a:hover{
+        color:#64ffda;
+        transform: translatex(0.10rem);
+    }
+}
+
+@media only screen and (max-width:768px){
+    #header .hamburger{
+        z-index: 100;
+        height: 38px;
+        width: 38px;
+        display: inline-block;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+}
+@media only screen and (max-width:768px){
+    #header .hamburger::after{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 3px solid white;
+        animation: hamburger_puls 1s ease infinite;
+    }
+}
+
+@keyframes hamburger_puls{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+
+}
+@media only screen and (max-width:768px){
+    #header .hamburger .bar{
+        height: 3px;
+        width: 17px;
+        position: relative;
+        background-color:#64ffda;
+        z-index: -1;
+    
+    }
+}
+
+@media only screen and (max-width:768px){
+    #header .hamburger .bar::after,
+    #header .hamburger .bar::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 93%;
+        left: 0.9px;
+        background-color: #64ffda;
+        transition: .3 ease;
+        transition-property: top, bottom;
+}
+}
+@media only screen and (max-width:768px){
+    #header .hamburger .bar::after{
+        top: 8px;
+    }
+}
+@media only screen and (max-width:768px){
+    #header .hamburger .bar::after{
+        top: 8px;
+    }  
+}
+@media only screen and (max-width:768px){
+    #header .hamburger .bar::before{
+        bottom: 8px;
+    }
+}
+@media only screen and (max-width:768px){
+    #header .hamburger.active .bar::before{
+        bottom: 0;
+        transition: 0.3s;
+    }
+}
+@media only screen and (max-width:768px){
+    #header .hamburger.active .bar::after{
+        top: 0;
+        transition: 0.3s;
+    }
+}
+@media only screen and (max-width:768px){
+    .resume_button a{
+        display: inline-block;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        background-color: transparent;
+        border: 1px solid #64ffda;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.0;
+        border-radius: .25rem;
+    }
+}
+@media only screen and (max-width:768px){
+    .resume_button a:hover{
+        background: transparent;
+        background-clip: padding-box;
+        color: #64ffda;
+        background-color: #233554;
+        transition: 0.3s;
+    }
+}
+
+
+/* navigation bar responsive  end*/
+@media only screen and (max-width:768px){
+    .header_area{
+        display: none;
+    }
+}
+.header_area{
+    display: block;
+}
 .navbar-light .navbar-nav .nav-link {
     color: white;
 }
@@ -22,32 +241,39 @@ body {
 body{
     background-color: #061630;
 }
-.navbar-brand{
+@media only screen and (max-width:768px){
+    .navbar-logo{
+        display: none;
+    }
+}
+.navbar-logo{
+    display: block;
     position: relative;
     left:180px;
 }
+
 @media only screen and (max-width:768px){
-    .navbar-brand{
-        position: relative;
-        left:-10px;
-        
+    .logo{
+        display: none;
     }
+
 }
 .logo{
     width: 65px;
     height: 80px;
 }
+
 @media only screen and (max-width:768px){
-    .logo{
-        width: 55px;
-        height: 70px;
+    .navbar-nav{
+        display: none;
     }
 }
-
 .navbar-nav{
     position: relative;
-    margin-right:180px;
+    margin-right:80px;
 }
+
+
 .nav-link{
     font-family: var(--font-mono);
     font-weight: 500;
@@ -55,6 +281,12 @@ body{
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2.5rem;
+}
+
+
+.navbar-light .navbar-toggler{
+    z-index: 100;
+    color: #64ffda;
 }
 
 .navbar-nav a{
@@ -72,7 +304,26 @@ body{
     background-clip: text;
     margin-top: 2px;
 }
-
+.resume_buttons{
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+.resume_buttons:hover{
+    background: transparent;
+    background-clip: padding-box;
+    color: #64ffda;
+    background-color: #233554;
+    transition: 0.3s;
+}
 h1 {
     color: #ccd6f6;
     font-size: 5.5rem;
@@ -89,6 +340,7 @@ h1 {
 @media only screen and (max-width:768px){
     .site-main{
         margin-left: 20px;
+        margin-top: 100px;
     }
 }
 
@@ -199,6 +451,7 @@ p{
 a{
     color: #64ffda; 
     list-style: none;
+    text-decoration: none;
 }
 .about-area a{
     color: #64ffda; 
@@ -209,19 +462,7 @@ a{
     color: #ccd6f6;
     text-decoration: none;
 }
-.resume_buttons{
-    display: inline-block;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    background-color: transparent;
-    border: 1px solid #64ffda;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-}
+
 .contact-me a{
     display: inline-block;
     font-weight: 400;
@@ -258,13 +499,7 @@ a{
         list-style: none;
     }
 }
-.resume_buttons:hover{
-    background: transparent;
-    background-clip: padding-box;
-    color: #64ffda;
-    background-color: #233554;
-    transition: 0.3s;
-}
+
 .contact-me a:hover{
     background: transparent;
     background-clip: padding-box;
@@ -294,9 +529,10 @@ a{
 
 .icon, i:hover{
     color: white;
-    transform: translatex(0.15rem);
+    transform: translatex(0.10rem);
     text-decoration: none;
     list-style: none;
+    transition: .2s;
 }
 
 .skills-list {
@@ -598,6 +834,14 @@ span i:hover{
     margin: 0px;
     margin-left: 200px;
 }
+@media only screen and (max-width:768px){
+    .styled_projects{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 120px;
+    }
+}
 .projects_box{
     visibility: visible;
     opacity: 1;
@@ -616,6 +860,7 @@ span i:hover{
         box-shadow: rgba(2, 12,27,0.7);
         display: block;
         margin-left: 14px;
+        position: relative;
         
     }
 }
@@ -638,11 +883,11 @@ span i:hover{
 @media only screen and (max-width:768px){
     .projects-content{
         padding: 0px;
-        display: block;
-        margin: 60px;
-        margin-top: -10px;
-        margin-bottom: 10px;
-        left: 20px;
+        margin: 30px;
+        margin-top: 10px;
+        margin-right: 60px;
+        margin-right: 150px;
+        padding-left: -40px;
     }
 }
 div{
@@ -656,9 +901,19 @@ div{
     font-size: 1.3rem;
     font-weight: 550;
 }
+@media only screen and (max-width:768px){
+    .projects-overline{
+        font-size: 1.1rem;
+    }
+}
 .projects-title a{
     color:#ccd6f6;
     font-weight: 600;
+}
+@media only screen and (max-width:768px){
+    .projects-title a{
+        font-size: 1.35rem;
+    }
 }
 .projects-title a:hover{
     color: #64ffda;
@@ -676,10 +931,24 @@ div{
     font-size: 1.5rem;
     text-align: right;
 }
+
+@media only screen and (max-width:768px){
+    .projects-description{
+        font-size: 1rem;
+        text-align: left;
+        padding: 0.5px;
+    }
+}
 .projects-description p{
     gap: 3px;
     margin: 1.5rem;
     font-size: 1.1rem;
+}
+@media only screen and (max-width:768px){
+    .projects-description p{
+        margin: 1.5rem;
+        font-size: 1.0rem;
+    }
 }
 .projects-description p::before{
     content: "▹";
@@ -701,6 +970,11 @@ div{
     display: list-item;
     margin: 0px 10px 5px 0px;
     float: right;
+}
+@media only screen and (max-width:768px){
+    .projects-skills li{
+        font-size: 0.9rem;
+    }
 }
 
 .projects_box:nth-of-type(2n+1) .projects-image img{
@@ -736,15 +1010,17 @@ div{
     margin-right: 10px;
     left: 0;
     margin: 140px;
+    margin-top: 120px;
     margin-left: -205px;
     padding: 0;
     position: relative;
 }
 @media only screen and (max-width:768px){
     .gatasby-image-wrapper img{
-        padding: 70px;
-        margin-top: 10px;
-        margin-left: -290px;
+        padding: 90px;
+        margin-top: 25px;
+        margin-left: -239px;
+        height: 450px;
     }
 }
 /* .gatasby-image-wrapper img::after{
@@ -768,6 +1044,15 @@ div{
     align-items: center;
     margin-left: 185px;
 }
+@media only screen and (max-width:768px){
+    .tic-tac-toe{
+        display: block;
+        position: relative;
+        margin-top: 680px;
+        padding: -40px;
+        margin-left: 90px;
+    }
+}
 .tic-tac-toe .game-content{
     grid-column: 1 / 5;
     text-align: left;
@@ -775,6 +1060,13 @@ div{
 .game-content{
     margin-top: -1035px;
     margin-left: -180px;
+}
+@media only screen and (max-width:768px){
+    .game-content{
+        margin-bottom: 250px;
+        margin-left: -190px;
+
+    }
 }
 div{
     display: block;
@@ -787,9 +1079,19 @@ div{
     font-size: 1.3rem;
     font-weight: 550;
 }
+@media only screen and (max-width:768px){
+    .game-overline{
+        font-size: 1.1rem;
+    }
+}
 .game-title a{
     color:#ccd6f6;
     font-weight: 600;
+}
+@media only screen and (max-width:768px){
+    .game-title a{
+        font-size: 1.35rem;
+    }
 }
 .game-title a:hover{
     color: #64ffda;
@@ -806,12 +1108,27 @@ div{
     color: #a8b2d1;
     font-size: 1.5rem;
     text-align: left;
+}@media only screen and (max-width:768px){
+    .game-description{
+        padding: 0.3px;
+        margin: 360px;
+        margin-left: 5px;
+        left: -10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 }
+}
+
 .game-description p{
     gap: 3px;
     margin: 1.5rem;
     font-size: 1.1rem;
     text-align: left;
+}
+@media only screen and (max-width:768px){
+    .game-description p{
+        font-size: 1.0rem;
+    }
 }
 
 .game-skills li{
@@ -838,6 +1155,12 @@ div{
     padding: -30px;
     
 }
+@media only screen and (max-width:768px){
+    .game-image img{
+        padding: 5px;
+        margin-left: 10px;
+    }
+}
 .game-image a{
     position: relative; 
     border-radius: 4px;
@@ -862,6 +1185,17 @@ div{
     margin: 0px;
     margin-left: -110px;
     padding: 0;
+}
+
+@media only screen and (max-width:768px){
+    .game-image-wrapper img{
+        height: 270px;
+        padding: 30px;
+        margin-top: -22px;
+        padding-left: -10px;
+        margin-right: 200px;
+        left: -90px;
+    }
 }
 
 
