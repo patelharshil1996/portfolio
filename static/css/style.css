@@ -38,8 +38,7 @@ body{
     #header .header{
         min-height: 8vh;
         background-color:#061630;
-        transition: .2s ease background-color;
-    
+        transition: .1s ease backgroundColor;
     }
 }
 @media only screen and (max-width:768px){
@@ -338,7 +337,7 @@ h1 {
 }
 
 @media only screen and (max-width:768px){
-    .site-main{
+    #site-banner{
         margin-left: 20px;
         margin-top: 100px;
     }
@@ -392,28 +391,27 @@ h2 {
     margin-top: 20rem;
     color: #ccd6f6;
 }
-
-.about-area{
+/* about area start */
+#about{
     margin-left: 190px;
     margin-top: -80px;
 }
 
 @media only screen and (max-width:768px){
-    .about-area{
-        margin-left: 7px;
-        margin-top: -80px;
+    #about{
+        margin-left: 25px;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 }
-.Experience-area{
-    margin-left: 190px;
-    margin-top: -80px;
-}
-.about-area .heading {
+
+#about .heading {
     position: relative;
     font-size: 2.5rem;
 }
 @media only screen and (max-width:768px){
-    .about-area .heading {
+    #about .heading {
         position: relative;
         font-size: 2.0rem;
     }
@@ -422,7 +420,7 @@ h2 {
     position: relative;
     font-size: 2.5rem;
 }
-.about-area .heading::before {
+#about .heading::before {
     position: relative;
     content: "01. ";
     color: #64ffda;    
@@ -453,11 +451,14 @@ a{
     list-style: none;
     text-decoration: none;
 }
-.about-area a{
+html{
+    scroll-behavior: smooth;
+}
+#about a{
     color: #64ffda; 
     list-style: none;
 }
-.about-area a:hover{ 
+#about a:hover{ 
     list-style: none;
     color: #ccd6f6;
     text-decoration: none;
@@ -594,20 +595,25 @@ ul {
 
 /* start experiences */
 
-.experiences-area .heading::before {
+/* #experience{
+    margin-left: 190px;
+    margin-top: -80px;
+} */
+
+#experience .heading::before {
     position: relative;
     content: "02. ";
     color: #64ffda;    
 }
 
 @media only screen and (max-width:768px){
-    .experiences-area h2{
-        margin-left: -190px;
+    #experience h2{
+        margin-left: -170px;
         font-size: 1.8rem;
     }
 }
 
-.experiences-area h2{
+#experience h2{
     gap: 2.0rem;
     left: 200px;
     margin-top: 290px;
@@ -726,8 +732,8 @@ span i:hover{
         display: grid;
         place-items: center;
         transition: .4s;
-        /* visibility: hidden;
-        opacity: 0;  */
+        visibility: hidden;
+        opacity: 0; 
         z-index: 3;
     }
 }
@@ -810,19 +816,19 @@ span i:hover{
 /* experiences area end */
 /* projects area */
 
-.projects-area .heading::before {
+#projects .heading::before {
     position: relative;
     content: "03. ";
     color: #64ffda;    
 }
-.projects-area h2{
+#projects h2{
     gap: 2.0rem;
     left: 200px;
     margin-top: 290px;
 }
 @media only screen and (max-width:768px){
-    .projects-area h2{
-        left: 10px;
+    #projects h2{
+        left: 25px;
         margin-top: 290px;
         font-size: 1.8rem;
     }
@@ -839,7 +845,7 @@ span i:hover{
         list-style: none;
         padding: 0px;
         margin: 0px;
-        margin-left: 120px;
+        margin-left: 130px;
     }
 }
 .projects_box{
