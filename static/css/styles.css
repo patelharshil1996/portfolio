@@ -13,6 +13,7 @@ body {
     line-height: 1.0;
     color: #8892b0;
     text-align: left;
+    -webkit-font-smoothing: antialiased;
     font-family: var(--font-sans);
 }
 body{
@@ -870,17 +871,7 @@ span i:hover{
         
     }
 }
-/* .projects_box .projects-content{
-    display:flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    height: 100%;
-    z-index: 5;
-    position: relative;
-    grid-row-start: 1;
-    grid-row-end: -1;
-} */
+
 
 .projects-content{
     grid-column: 5 / -1;
@@ -1007,7 +998,6 @@ div{
     display: inline-block;
     position: relative;
     padding: 20px;
-
 }
 
 .gatasby-image-wrapper img{
@@ -1041,11 +1031,10 @@ div{
 .tic-tac-toe{
     visibility: visible;
     opacity: 1;
-    transform: matrix(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
     position: relative;
-    display: grid;
+    /* display: grid; */
     gap: 5px;
-    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(12, 1fr); */
     -webkit-box-align: center;
     align-items: center;
     margin-left: 185px;
@@ -1054,7 +1043,7 @@ div{
     .tic-tac-toe{
         display: block;
         position: relative;
-        margin-top: 680px;
+        margin-top: 300px;
         padding: -40px;
         margin-left: 90px;
     }
@@ -1064,7 +1053,7 @@ div{
     text-align: left;
 }
 .game-content{
-    margin-top: -1035px;
+    margin-top: -848px;
     margin-left: -180px;
 }
 @media only screen and (max-width:768px){
@@ -1185,25 +1174,145 @@ div{
 
 .game-image-wrapper img{
     bottom: 500px;
-    height: 370px;
+    height: 380px;
     margin-right: 10px;
     left: 0;
     margin: 0px;
     margin-left: -110px;
     padding: 0;
+    margin-top: -800px;
 }
 
 @media only screen and (max-width:768px){
     .game-image-wrapper img{
         height: 270px;
         padding: 30px;
-        margin-top: -22px;
-        padding-left: -10px;
+        margin-top: -800px;
+        margin-left: -200px;
+        padding-left: -20px;
         margin-right: 200px;
         left: -90px;
     }
 }
+ 
 
+
+#contact .heading{
+    display: block;
+    margin-top: 10px;
+    color:#64ffda;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 10px 40px;
+    width: 100%;
+    padding-top: -180px;
+}
+#contact{
+    text-align: center;
+    margin-top: -20px;
+}
+@media only screen and (max-width:768px){
+    #contact{
+        text-align: center;
+        display: block;
+        position: relative;
+        margin-top: -20px;
+        margin:-50px -400px 5px;
+        margin-right: -400px;
+        left: -30px;
+    }
+}
+.title-contact{
+    margin-top: -30px;
+    font-weight: 600;
+}
+@media only screen and (max-width:768px){
+    .title-contact{
+        margin-top: -30px;
+        font-weight: 300;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width:768px){
+    #contact p{
+        display: block;
+        position: relative;
+        
+    }
+}
+#contact p{
+    margin: 20px 395px 10px;
+    margin-left: 450px;
+    gap: 1rem;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+}
+
+@media only screen and (max-width:768px){
+    #contact a{
+        margin-left: 30px;
+    }
+}
+
+#contact a{
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background: transparent;
+    background-clip: padding-box;
+    border: 2px solid #64ffda;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin-top: 17px;
+    margin-bottom: 250px;
+    transition: background.6s ease;
+    list-style: none;    
+}
+#contact a:hover{
+    background: transparent;
+    background-clip: padding-box;
+    color: #64ffda;
+    background-color: #233554;
+    transition: .3s;
+    text-decoration: none;
+}
+#contact .heading::before{
+    position: relative;
+    content: "04. ";
+    color: #64ffda;   
+
+}
+.footer{
+    margin-bottom: 50px;
+}
+
+
+.footer a{
+    color: #a8b2d1;
+    font-size: 1.0rem;
+    margin-top: -50px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.footer a:hover{
+    background: transparent;
+    color: #64ffda;
+    transition: .3s;
+    cursor: pointer;;
+    text-decoration: none;
+}
 
 ::before, ::after {
     box-sizing: inherit;
@@ -1213,14 +1322,7 @@ div{
     color: #a8b2d1;
 }
 
-/* @media only screen and (min-width:768px){
-    .navbar-brand{
-        position: relative;
-        padding: 0px;
-        margin-left: -178px;
-        margin-top: 40px;
-    }
-} */
+
 
 
 
