@@ -26,7 +26,7 @@ SECRET_KEY = '02tpyg*6=p6g8fi86y@r!84_&d^=j(b=(bzf*)qo_q)_ul7%=u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['122.0.0.1', 'harshil-port.herokuapp.com']
 
 
 
